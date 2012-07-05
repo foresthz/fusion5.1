@@ -1,0 +1,30 @@
+etc/config.ini-fhs                     etc/@PACKAGE@
+etc/config.ini.d/defaults.ini          etc/@PACKAGE@/config.ini.d/
+etc/config.ini.d/debug.ini             etc/@PACKAGE@/config.ini.d/
+etc/httpd.d/[0-1,6-9][0-9]*            usr/share/@OLDPACKAGE@/etc/httpd.d/
+etc/httpd.d/httpd*                     usr/share/@OLDPACKAGE@/etc/httpd.d/
+etc/local.d/[0-9][0-9]*                usr/share/@OLDPACKAGE@/etc/local.d/
+etc/templates/*\.*                     usr/share/@OLDPACKAGE@/etc/templates/
+setup                                  usr/share/@OLDPACKAGE@/bin/
+deb-specific/cvssh                     bin/
+#
+deb-specific/install-chroot.sh         usr/share/@OLDPACKAGE@/bin/
+deb-specific/install-ssh.sh            usr/share/@OLDPACKAGE@/bin/
+utils/fill-in-the-blanks.pl            usr/share/@OLDPACKAGE@/bin/
+deb-specific/@PACKAGE@-config          usr/sbin/
+utils/include.pl                       usr/share/@OLDPACKAGE@/lib/
+utils/forge_get_config                 usr/share/@OLDPACKAGE@/bin/
+utils/migrate-to-ini-files.sh	       usr/share/@OLDPACKAGE@/bin/
+#
+deb-specific/user_dump_update.pl       usr/share/@OLDPACKAGE@/bin/
+deb-specific/group_dump_update.pl      usr/share/@OLDPACKAGE@/bin/
+#cronjobs/cvs-cron/default_page.php    usr/share/@OLDPACKAGE@/cronjobs/
+deb-specific/ssh_dump_update.pl        usr/share/@OLDPACKAGE@/bin/
+#
+deb-specific/update-user-group-ssh.sh  usr/share/@OLDPACKAGE@/bin/
+#
+common                                 usr/share/@OLDPACKAGE@/
+cronjobs/create_scm_repos.php          usr/share/@OLDPACKAGE@/cronjobs/
+cronjobs/gather_scm_stats.php          usr/share/@OLDPACKAGE@/cronjobs/
+cronjobs/generate_scm_snapshots.php    usr/share/@OLDPACKAGE@/cronjobs/
+locales/*                              usr/share/locale/
